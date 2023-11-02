@@ -1,0 +1,11 @@
+<DOCTYPE>
+    <html>
+        <h1> welcome </h1>
+        <body>
+            <form method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit">Book us now</button>
+            </form>        
+        </body>
+    </html>
