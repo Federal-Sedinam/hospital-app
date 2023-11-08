@@ -9,3 +9,4 @@ class appointment_form(forms.ModelForm):
         model = appointment
         fields = ['name', 'service', 'discount']
         
+        
