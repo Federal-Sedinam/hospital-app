@@ -5,4 +5,4 @@ class appointment(models.Model):
     service = models.CharField(max_length=100)
     discount = models.CharField(max_length=10) 
     def __str__(self):
-        return self.service
+        return self.name
