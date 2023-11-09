@@ -52,15 +52,15 @@ form {
   flex-direction: column;
 }
 
-h2 {
+h3 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000080;
 }
 
 .input-field {
   position: relative;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #000080;
   margin: 15px 0;
 }
 
@@ -141,18 +141,13 @@ button:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
-.register {
-  text-align: center;
-  margin-top: 30px;
-  color: #fff;
-
-}
 </style>
 
   <div class="wrapper">
     <!-- put redirect page link in line below -->
-    <form action="{% url 'home' %}" >
-      <h2>WELCOME</h2>
+    <form action="{% url 'confirmation' %}" method="post">
+      <!-- {% csrf_token %} -->
+      <h3>WELCOME TO THE HOSPITAL APP</h3>
         <div class="input-field">
         <input type="text" required>
         <label>Enter your name</label>
@@ -165,17 +160,8 @@ button:hover {
         <input type="text" required>
         <label>Enter discount code</label>
       </div>
-      <!-- <div class="forget">
-        <label for="remember">
-          <input type="checkbox" id="remember">
-          <p>Remember me</p>
-        </label>
-        <a href="#">Forgot password?</a>
-      </div> -->
       <button type="submit">Book Appointment</button>
-      <div class="register">
-        <p>Pyclubs Hospital App</p>
-       
+      <div class="register">  
       </div>
       
     </form>
