@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <title>Pyclubs homepage | Samuel Odame</title> -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -146,7 +145,7 @@ button:hover {
   <div class="wrapper">
     <!-- put redirect page link in line below -->
     <form action="{% url 'confirmation' %}" method="post">
-      <!-- {% csrf_token %} -->
+      {% csrf_token %}
       <h3>WELCOME TO THE HOSPITAL APP</h3>
         <div class="input-field">
         <input type="text" required>
@@ -161,6 +160,7 @@ button:hover {
         <label>Enter discount code</label>
       </div>
       <button type="submit">Book Appointment</button>
+      </form>
       <div class="register">  
       </div>
       
