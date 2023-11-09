@@ -15,7 +15,7 @@ def book_appointment(request):
             patient_name = form.cleaned_data["name"]
             service = form.cleaned_data["service"].lower()
             discount = form.cleaned_data["discount"].lower()
-
+           
             services = {
                 "dialysis": "880",
                 "malaria": "750",

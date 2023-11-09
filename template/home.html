@@ -1,5 +1,48 @@
-<DOCTYPE>
+<!DOCTYPE>
     <html>
-        <h1> welcome home </h1>
-        <a href="{% url 'bookappointment' %}" > Book appointment </a>
+    <head>
+        <style>
+            body {
+                background-color:#dfe3ee;;
+            }
+
+            .frame {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .word
+            {
+                color: #130808;
+                text-align: center;
+            }
+
+            .bookbtn {
+                height: 50px;
+                width: 150px;
+                border-radius: 5px;
+                background-color: #000080;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="frame">
+            <div class="word">
+                <h1> Welcome To The Hospital App</h1>
+            </div>
+            <a href="{% url 'bookappointment' %}" >
+                <button class="bookbtn">
+                    Book appointment
+                </button>
+            </a>
+        </div>
+    </body>    
     </html>
