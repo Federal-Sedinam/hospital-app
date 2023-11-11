@@ -144,13 +144,18 @@ button:hover {
 
   <div class="wrapper">
     <!-- put redirect page link in line below -->
-    <form action="{% url 'confirmation' %}" method="post">
+    <form method="POST" action="{% url 'confirmation' %}" >
       {% csrf_token %}
       <h3>Book Your Appointment</h3>
-        <!-- <div class="input-field"> -->
 
       {{form.as_p}}
-        <!-- <input type="text" required>
+
+      <button type="submit">Book Appointment</button>
+
+       <!-- <div class="input-field">
+
+      
+        <input type="text" required>
         <label>Enter your name</label>
       </div>
       <div class="input-field">
@@ -159,12 +164,12 @@ button:hover {
       </div>
       <div class="input-field">
         <input type="text" required>
-        <label>Enter discount code</label> -->
-      <!-- </div> -->
+        <label>Enter discount code</label>
+       </div> 
       <button type="submit">Book Appointment</button>
       </form>
       <div class="register">  
-      </div>
+      </div>  -->
       
     </form>
     </br>
@@ -172,4 +177,4 @@ button:hover {
   </div>
   
 </body>
-</html
+</html>
